@@ -1,1 +1,1 @@
-![portada](src\header.png)
+![portada](src/header.png)
