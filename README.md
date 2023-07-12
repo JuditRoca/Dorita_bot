@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/JuditRoca/GPT_Googler/blob/main/scr/docs/header3.png" alt="Portada"/>
+  <img src="https://github.com/JuditRoca/GPT_Googler/blob/main/src/docs/header3.png" alt="Portada"/>
 </p>
 <p align="center">
   <a href="#Introduction">Introduction</a> •
