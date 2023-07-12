@@ -1,4 +1,6 @@
-<img src="./src/header2.png" alt="my caption" style="width: 750px;"/>
+<p align="center">
+  <img src="https://github.com/JuditRoca/GPT_Googler/blob/main/src/header3.png" alt="Portada"/>
+</p>
 
 
 
