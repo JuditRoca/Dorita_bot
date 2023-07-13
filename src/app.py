@@ -29,7 +29,7 @@ def home():
     try:
         
         if request.method == 'GET':
-            return render_template('src\template\index.html')
+            return render_template('index.html')
         
         if request.form['question']:
             question = request.form['question']
@@ -56,6 +56,6 @@ def home():
             
 
     except:
-        return render_template('src\template\index.html')
+        return render_template('index.html')
     
 app.run(host="0.0.0.0", port=5000, debug=True)
