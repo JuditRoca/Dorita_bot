@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <title>Doritabot - Your AI assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Tu Doritabot personal</h1>
+    <p>Aquí tienes la respuesta que andabas buscando!</p>
+    <p>{{ text_output }}</p>
+    <p><a href="/">Back</a></p>
+  </div>
+</body>
+</html>

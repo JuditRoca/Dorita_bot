@@ -54,9 +54,10 @@ def home():
 
             historial.append(respuesta)
             
-            return render_template('index.html', historial = historial)
+            return render_template('index2.html', text_output = historial)
 
     except:
-        return render_template('index.html')
+
+        return render_template('index3.html')
     
 app.run(host="0.0.0.0", port=5000, debug=True)
