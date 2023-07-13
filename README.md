@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/JuditRoca/GPT_Googler/blob/main/src/static/header.png" alt="Portada"/>
 </p>
-<p align="center">
+<p align="center"> 
   <a href="#Introduction">Introduction</a> •
   <a href="#Instructions">Instructions</a> •
   <a href="#Team">Team</a> •
