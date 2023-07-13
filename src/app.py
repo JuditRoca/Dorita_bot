@@ -18,7 +18,7 @@ historial = []
 bbdd = 'data/bbdd.bd'
 
 @app.route('/', methods=['GET', 'POST'])
-def home(pregunta:str):
+def home():
     """
     Basic function where the user asks something and returns the answer from ChatGPT. It will also save it in the Cloud DDBB, in this case, AWS.
 
@@ -29,7 +29,7 @@ def home(pregunta:str):
     try:
         
         if request.method == 'GET':
-            return render_template('index.html')
+            return render_template('src\template\index.html')
         
         if request.form['question']:
             question = request.form['question']
@@ -56,6 +56,6 @@ def home(pregunta:str):
             
 
     except:
-        return render_template('index_3.html')
+        return render_template('src\template\index.html')
     
 app.run(host="0.0.0.0", port=5000, debug=True)
