@@ -1,3 +1,7 @@
-flask
-openai
+Flask
+langchain
+pandas
+sqlite3
+pymysql
+sqlalchemy
 
