@@ -1,10 +1,10 @@
 # **GPT Googler**
 
-[Foto del gato]
 
 *Para clonar este repositorio:* "git clone https://github.com/JuditRoca/GPT_Googler"
 
-¡Bienvenidos! Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
+¡Bienvenid@! 
+Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
 
 El proyecto comenzó con el equipo entre sentando las bases del código, la estructura de carpetas y recopilando toda la información posible para sacar adelante un proyecto de calidad.
 
@@ -14,15 +14,13 @@ Al final del primer día terminamos teniendo una interfaz de usuario a la altura
 
 A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriment.txt para que cualquiera disfrute del chatbot.
 
-[requirements.txt aqui]
-
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
 *Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Tranquilos que las claves están encriptadas***
 
 ----------
 
-### [emoji de chili] Flask 
+### 🌶️ Flask 
 
 .En esta aplicación, se puede acceder a través de solicitudes HTTP.
 
@@ -40,7 +38,7 @@ Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rend
 
 ----------
 
-### [emoji de la mano escribiendo] HTML
+### 💻 HTML
 
 Hemos diseñado el DoritaBot a través de Canva para que atraiga más al público. 
 
@@ -52,7 +50,7 @@ Las respuestas que genera no solo están en una letra más legible que en la de 
 
 ----------
 
-### [emoji de datos] Database
+### 📊 Database
 
 Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear una DDBB. Allí, el usuario puede ajustar los parámetros, los cuales son:
 * Cambiar las opciones del motor a MySQL.
@@ -72,11 +70,12 @@ Tras ello, estamos listos para usar la BBDD.
 
 ----------
 
-### [emoji] OpenAI
+### 🤖 OpenAI
 
 La principal herramienta que se ha utilizado viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y obteniendo una clave privada. *Cada persona puede usar una diferente que ha de asegurarse de copiarla en un lugar seguro.* 
 
 .Dicha API tiene sus límites y pueden mejorarse sus respuesta declarando constantes:
+
 ENGINE = Elegimos text-davinci-003 por valor de eficiencia/costo. U otro.
 MAX_TOKENS = 2500, 4000...
 CONTEXT_SIZE = Este parámetro recuerda preguntas y respuestas anteriores.
@@ -84,7 +83,7 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 ----------
 
-### [emoji de una ballena] Docker
+### 🐳 Docker
 
 .Docker resultó ser ... y nos dio (o no) problemas de compatibilidad. Instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine).
 
@@ -92,14 +91,4 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 [Foto del dockerfile]
 
-Una vez que se han establecido todos los parámetros y comandos de Dockerfile, se ejecutan los siguientes comandos:
-
-(completar con el codigo con los comandos.. tipo repositorio de miguel)
-
-1. Crear imágenes de Docker:
-
-2. Escaneo de vulnerabilidades:
-
-3. Empuje las imágenes de Docker a Docker Hub:
-
-4. Ejecutar contenedores Docker:
+Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
