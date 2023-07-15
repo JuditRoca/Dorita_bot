@@ -1,7 +1,6 @@
+datetime
 Flask
 langchain
-pandas
-sqlite3
 pymysql
-sqlalchemy
+python-dotenv
 
