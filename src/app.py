@@ -43,7 +43,7 @@ def home():
             question = request.form['question']
             historial.append({"message": question, "from_user": True})  # Agregar la pregunta al historial como una entrada del usuario
 
-            agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
+            agent = initialize_agent(tools, llm, agent="zero-shot-react-description", language="es", verbose=True)
             respuesta = agent.run(question)
 
             now = datetime.now()
