@@ -88,8 +88,6 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
 
-![dockerdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5)
-
-<center><img width="659" height="350" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5"></center>
+<center><img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5"></center>
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450"/>
