@@ -1,8 +1,5 @@
 # **GPT Googler**
 
-
-*Para clonar este repositorio:* "git clone https://github.com/JuditRoca/GPT_Googler"
-
 ¡Bienvenid@! 
 Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
 
@@ -12,7 +9,9 @@ Judith y Giacomo se encargaron de picar código, mientras Braulio estuvo buscand
 
 Al final del primer día terminamos teniendo una interfaz de usuario a la altura y un código notablemente completo de ChatGPT fusionado con Google que ya respondía a lo que se le preguntaba y, posteriormente, se respondía a sí mismo.
 
-A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriment.txt para que cualquiera disfrute del chatbot.
+A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriments.txt para que cualquiera disfrute del chatbot.
+
+[requirements]
 
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
