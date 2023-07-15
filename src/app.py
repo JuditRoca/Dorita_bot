@@ -51,8 +51,9 @@ def home():
 
             # Now let's test it out!
             respuesta = agent.run(question)
+            now = datetime.now()
 
-            historial.append(respuesta)
+            historial.append(respuesta, now)
             
             return render_template('index2.html', text_output = respuesta)
 
