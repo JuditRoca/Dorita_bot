@@ -1,7 +1,8 @@
 import pymysql
+import os
 
-username = ""
-password = ""
+username = os.environ.get["user_bd"]
+password = os.environ.get["pass_bd"]
 host = ''
 port = 3306
 

@@ -8,8 +8,8 @@ import pandas as pd
 import sqlite3
 
 os.chdir(os.path.dirname(__file__))
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["SERPAPI_API_KEY"] = "5067b007321f10e48e326d4eb4541a31e265c60d4975babe7f032261dd340dfd"
+api_key = os.environ.et["api_key"] 
+serpapi_key = os.environ.get["serpapi"] 
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
