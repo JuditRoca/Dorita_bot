@@ -15,10 +15,6 @@ serpapi_key = os.environ.get("SERPAPI_API_KEY")
 username = os.environ.get("user_bd")
 password = os.environ.get("pass_bd")
 host = os.environ.get("host")
-db = pymysql.connect(host = host,
-                        user = username,
-                        password = password,
-                        cursorclass = pymysql.cursors.DictCursor)
 
  # Load the model
 llm = OpenAI(api_key=api_key)
@@ -51,12 +47,19 @@ def home():
             respuesta = agent.run(question)
 
             now = datetime.now()
+            
+            historial.append({"message": respuesta, "from_user": False, "timestamp": now})
+
+            db = pymysql.connect(host = host,
+                                 user = username,
+                                 password = password,
+                                 db= 'gptgoogler_database',
+                                 cursorclass = pymysql.cursors.DictCursor)
             cursor = db.cursor()
-            sql = "INSERT INTO chatbot_records (pregunta, respuesta, timestamp) VALUES (%s, %s)"
+            sql = "INSERT INTO chatbot_records (pregunta, respuesta, timestamp) VALUES (%s, %s, %s)"
             cursor.execute(sql, (question, respuesta, now))
             db.commit()
             db.close()
-            historial.append({"message": respuesta, "from_user": False, "timestamp": now})
 
             return render_template('index.html', historial=historial)
     except:
@@ -64,8 +67,12 @@ def home():
     
 @app.route('/get_history', methods=['GET'])
 def get_all():
+    db = pymysql.connect(host = host,
+                        user = username,
+                        password = password,
+                        db= 'gptgoogler_database',
+                        cursorclass = pymysql.cursors.DictCursor)
     cursor = db.cursor()
-
     sql = '''SELECT * FROM chatbot_records'''
     cursor.execute(sql)
     history = cursor.fetchall()
