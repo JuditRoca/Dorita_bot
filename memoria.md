@@ -1,7 +1,8 @@
+# GPT Googler DoritaBot
 
 <img width="959" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
 
-¡Bienvenid@! 
+¡Bienvenid@!
 Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
 
 El proyecto comenzó con el equipo entre sentando las bases del código, la estructura de carpetas y recopilando toda la información posible para sacar adelante un proyecto de calidad.
@@ -11,7 +12,6 @@ Judith y Giacomo se encargaron de picar código, mientras Braulio estuvo buscand
 Al final del primer día terminamos teniendo una interfaz de usuario a la altura y un código notablemente completo de ChatGPT fusionado con Google que ya respondía a lo que se le preguntaba y, posteriormente, se respondía a sí mismo.
 
 A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriments.txt para que cualquiera disfrute del chatbot.
-
 
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
@@ -89,5 +89,7 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
 
 ![dockerdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5)
+
+<img width="959" height="550" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450"/>
