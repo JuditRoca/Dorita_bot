@@ -1,9 +1,9 @@
 # GPT Googler DoritaBot
 
-<img width="959" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
-
 ¡Bienvenid@!
 Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
+
+<img width="959" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
 
 El proyecto comenzó con el equipo entre sentando las bases del código, la estructura de carpetas y recopilando toda la información posible para sacar adelante un proyecto de calidad.
 
@@ -90,6 +90,6 @@ Una vez que se han establecido todos los parámetros y comandos de Dockerfile, y
 
 ![dockerdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5)
 
-<img width="959" height="550" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
+<img width="959" height="450" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450"/>
