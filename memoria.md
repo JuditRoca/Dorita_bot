@@ -13,8 +13,6 @@ Al final del primer día terminamos teniendo una interfaz de usuario a la altura
 
 A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriments.txt para que cualquiera disfrute del chatbot.
 
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="400" height="500"/>
-
 
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
@@ -89,6 +87,8 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 .Hay un Dockerfile para producción.
 
+Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
+
 ![dockerdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5)
 
-Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450"/>
