@@ -44,8 +44,7 @@ Hemos diseñado el DoritaBot a través de Canva para que atraiga más al públic
 Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del usuario a diferencia de su competidor ChatGPT, Bing o Bard.
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
-
-<div style="text-align: center;">
+<div class= "center">
 ![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
 </div>
 ----------
