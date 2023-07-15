@@ -8,7 +8,7 @@ import pandas as pd
 import sqlite3
 
 os.chdir(os.path.dirname(__file__))
-api_key = os.environ.et["api_key"] 
+api_key = os.environ.get["api_key"] 
 serpapi_key = os.environ.get["serpapi"] 
 
 app = Flask(__name__)
