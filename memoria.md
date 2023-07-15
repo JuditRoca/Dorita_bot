@@ -1,5 +1,7 @@
 # **GPT Googler**
 
+<img width="959" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
+
 ¡Bienvenid@! 
 Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
 
@@ -11,7 +13,7 @@ Al final del primer día terminamos teniendo una interfaz de usuario a la altura
 
 A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el repositorio notablemente funcional y se listaron las instalaciones necesarias en requeriments.txt para que cualquiera disfrute del chatbot.
 
-[requirements]
+![requirementsdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af)
 
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
@@ -33,7 +35,7 @@ Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna 
 *Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. 
 Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
 
-[Foto de dev no production]
+![dev no production](https://github.com/JuditRoca/GPT_Googler/assets/130987096/72d1c0f1-be99-47dd-a78f-eb8e7fa81622)
 
 ----------
 
@@ -45,7 +47,7 @@ Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del 
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
 
-[Foto de la interfaz del chat]
+![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
 
 ----------
 
@@ -60,8 +62,6 @@ Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear 
 
 Tras esperar a que el servicio cree nuestra BBDD, necesitaremos cambiar una cosa para permitir la conectividad con nuestra máquina. 
 Hacemos clic en nuestra BBDD y nos dirigimos a "Seguridad>Reglas de entrada" para crear una nueva línea con IPv4 que permita cualquier tráfico con origen (0.0.0.0/0).
-
-[Foto en donde se vea esto, Miguel pasó una]
 
 Una vez que lo tengamos en ejecución, debemos crear una tabla para almacenar nuestras indicaciones. 
 Todas las preguntas y respuestas están escritas en archivo .txt. 
@@ -88,6 +88,6 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 .Hay un Dockerfile para producción.
 
-[Foto del dockerfile]
+![dockerdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5)
 
 Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
