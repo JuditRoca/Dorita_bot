@@ -1,4 +1,3 @@
-# **GPT Googler**
 
 <img width="959" alt="header" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/594165cc-414e-4a3b-9508-103536972ea3">
 
