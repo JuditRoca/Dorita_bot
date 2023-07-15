@@ -1,5 +1,5 @@
 from datetime import datetime
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.llms import OpenAI
@@ -8,8 +8,8 @@ import pandas as pd
 import sqlite3
 
 os.chdir(os.path.dirname(__file__))
-api_key = os.environ.get["api_key"] 
-serpapi_key = os.environ.get["serpapi"] 
+api_key = os.environ.get("api_key")
+serpapi_key = os.environ.get("serpapi")
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -52,13 +52,17 @@ def home():
             # Now let's test it out!
             respuesta = agent.run(question)
             now = datetime.now()
-
             historial.append(respuesta, now)
             
-            return render_template('index2.html', text_output = respuesta)
-
+            return redirect(url_for('answer', response=respuesta))
     except:
-
         return render_template('index3.html')
     
+@app.route('/answer')
+def answer():
+    response = request.args.get('response')
+
+    return render_template('index2.html', text_output=response)
+
+
 app.run(host="0.0.0.0", port=5000, debug=True)

@@ -1,9 +1,9 @@
 import pymysql
 import os
 
-username = os.environ.get["user_bd"]
-password = os.environ.get["pass_bd"]
-host = os.environ.get["host"]
+username = os.environ.get("user_bd")
+password = os.environ.get("pass_bd")
+host = os.environ.get("host")
 port = 3306
 
 db = pymysql.connect(host = host,
