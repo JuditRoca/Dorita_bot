@@ -54,7 +54,7 @@ def home():
 
             historial.append(respuesta)
             
-            return render_template('index2.html', text_output = historial)
+            return render_template('index2.html', text_output = respuesta)
 
     except:
 
