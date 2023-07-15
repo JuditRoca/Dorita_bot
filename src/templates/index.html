@@ -3,22 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-  <title>Doritabot - Your AI assistant</title>
+  <title>Doritabot - Tu asistente de IA</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
   <div class="container">
-    <h1>Tu Doritabot personal</h1>
-    <p>¡Bienvenido a tu mejor Bot! Introduce aquí lo que quieres saber.</p>
+      <h1 id="bot-logo">
+        <img src="{{ url_for('static', filename='header.png') }}" alt="Logo del bot">
+      </h1>
+    <div class="chat-container">
+      <div class="chat-bubble bot-message">
+        <strong>Doritabot:</strong> ¡Hola! ¿En qué puedo ayudarte?
+      </div>
+      <div class="chat-history">
+        {% for entry in historial %}
+          {% if entry.from_user %}
+            <div class="chat-bubble user-message">
+              <strong>Tú:</strong> {{ entry.message }}
+            </div>
+          {% else %}
+            <div class="chat-bubble bot-message">
+              <strong>Doritabot:</strong> {{ entry.message }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
     <form method="POST" class="contact-us">
       <br>
       <br>
-      <label for="variable">Introduce tu pregunta:</label>
-      <input name="question" id="variable">
-      <br>
-      <br>
-      <br>
-      <button type="submit">RESPUESTA</button>
+      <div class="chat-input">
+        <label for="question">Introduce tu pregunta:</label>
+        <input name="question" id="question">
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+      </div>
       <br>
     </form>
   </div>

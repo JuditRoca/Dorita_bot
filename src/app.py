@@ -6,10 +6,19 @@ from langchain.llms import OpenAI
 import os
 import pandas as pd
 import sqlite3
+from dotenv import load_dotenv
+load_dotenv()
+
 
 os.chdir(os.path.dirname(__file__))
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-SERPAPI_API_KEY = os.environ.get("SERPAPI_API_KEY")
+api_key = os.environ.get("OPENAI_API_KEY")
+serpapi_key = os.environ.get("SERPAPI_API_KEY")
+
+ # Load the model
+llm = OpenAI()
+
+            # Load in some tools to use
+tools = load_tools(["serpapi", "llm-math"], llm=llm)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -26,42 +35,23 @@ def home():
     Type in the interface what you want to ask and it will return the answer.
     """
     try:
-        
+        respuesta = ""
         if request.method == 'GET':
             return render_template('index.html')
         
         if request.form['question']:
             question = request.form['question']
-            historial.append(question)
-        
-            # Load the model
-            llm = OpenAI()
-
-            # Load in some tools to use
-            tools = load_tools(["serpapi", "llm-math"], llm=llm)
-
-            # Finally, let's initialize an agent with:
-            # 1. The tools
-            # 2. The language model
-            # 3. The type of agent we want to use.
+            historial.append({"message": question, "from_user": True})  # Agregar la pregunta al historial como una entrada del usuario
 
             agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
-
-
-            # Now let's test it out!
             respuesta = agent.run(question)
+
             now = datetime.now()
-            historial.append(respuesta, now)
-            
-            return redirect(url_for('answer', response=respuesta))
+            historial.append({"message": respuesta, "from_user": False, "timestamp": now})
+
+            return render_template('index.html', historial=historial)
     except:
-        return render_template('index3.html')
+        return render_template('index.html', historial=historial)
     
-@app.route('/answer')
-def answer():
-    response = request.args.get('response')
-
-    return render_template('index2.html', text_output=response)
-
 
 app.run(host="0.0.0.0", port=5000, debug=True)
