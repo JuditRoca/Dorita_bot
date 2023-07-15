@@ -15,10 +15,9 @@ api_key = os.environ.get("OPENAI_API_KEY")
 serpapi_key = os.environ.get("SERPAPI_API_KEY")
 
  # Load the model
-llm = OpenAI()
+llm = OpenAI(api_key=api_key)
+tools = load_tools(["serpapi"], serpapi_key=serpapi_key)
 
-            # Load in some tools to use
-tools = load_tools(["serpapi", "llm-math"], llm=llm)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -35,7 +34,6 @@ def home():
     Type in the interface what you want to ask and it will return the answer.
     """
     try:
-        respuesta = ""
         if request.method == 'GET':
             return render_template('index.html')
         
