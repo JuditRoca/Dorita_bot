@@ -45,8 +45,9 @@ Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del 
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
 
+<div style="text-align: center;">
 ![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
-
+</div>
 ----------
 
 ### 📊 Database
@@ -88,6 +89,13 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
 
-<center><img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" style="text-align: center;"></center>
+<div style="text-align: center;">
+
+<img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" style="text-align: center;">
+
+</div>
+
+<div style="text-align: center;">
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450" style="text-align: center;"/>
+</div>
