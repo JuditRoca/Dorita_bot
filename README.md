@@ -2,11 +2,11 @@
   <img src="https://github.com/JuditRoca/GPT_Googler/blob/main/src/static/header.png" alt="Portada"/>
 </p>
 <p align="center"> 
-  <a href="#Intro">Intro</a> •
+  <a href="#Introduccion">Introduccion</a> •
   <a href="#Instrucciones">Instrucciones</a> •
   <a href="#Equipo">Equipo</a> •
 </p>
-<h2 id="Intro">:book:Intro</h2>
+<h2 id="Introduccion">:book: Introduccion </h2>
 
 Bienvenido al repositorio de GitHub del proyecto "GPT_Googler". Este proyecto tiene como objetivo proporcionar una solución integral para interactuar con diversas APIs, aprovechando el poder de ChatGPT y Google, y almacenando los datos obtenidos en AWS.
 
