@@ -81,4 +81,4 @@ Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya e
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
 
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center" height=400 width=500>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center" height=450 width=500>
