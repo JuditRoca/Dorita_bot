@@ -17,7 +17,7 @@ password = os.environ.get("pass_bd")
 host = os.environ.get("host")
 
  # Load the model
-llm = OpenAI(api_key=api_key)
+llm = OpenAI()
 tools = load_tools(["serpapi"], serpapi_key=serpapi_key)
 
 
