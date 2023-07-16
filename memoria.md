@@ -26,12 +26,11 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna la URL "/" a la función home(). Este punto acepta solicitudes GET y POST, que se pueden usar para recuperar la página de inicio e interactuar con DoritaBot, nuestro Bot personalizado.
 .Tanto si la petición se trata de una pregunta como si no es así, la respuesta se guardará en index.html para tener un historial y mejorar así la experiencia del usuario.
 
-.El segundo endpoint @app.route('/get_history', methods=['GET']) que es la que crea el historial (def get_all()).
+El segundo endpoint es @app.route('/get_history', methods=['GET']), que es la que crea el historial (funcion de def get_all() en el código).
 
-.La función de render_template() se utiliza para renderizar plantillas HTML que se pueden devolver como respuesta a solicitudes HTTP.
+La función de render_template() se utiliza para renderizar plantillas HTML que se pueden devolver como respuesta a solicitudes HTTP.
 
-*Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. 
-Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
+*Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
 
 ![dev no production](https://github.com/JuditRoca/GPT_Googler/assets/130987096/72d1c0f1-be99-47dd-a78f-eb8e7fa81622)
 
@@ -62,14 +61,13 @@ Tras esperar a que el servicio cree nuestra BBDD, se necesita cambiar una cosa p
 Hacemos clic en nuestra BBDD y nos dirigimos a "Seguridad>Reglas de entrada" para crear una nueva línea con IPv4 que permita cualquier tráfico con origen (0.0.0.0/0).
 
 Una vez que lo tengamos en ejecución, debemos crear una tabla para almacenar nuestras indicaciones. 
-Todas las preguntas y respuestas están escritas en archivo .txt. 
-Tras ello, estamos listos para usar la BBDD.
+Todas las preguntas y respuestas están escritas en archivo .txt.
 
 ----------
 
 ### 🤖 OpenAI
 
-La principal herramienta que se ha utilizado para este proyecto viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y estableciendo una clave privada (a su vez hay que utilizar una clave de SERP API) para hacer funcional esta herramienta. 
+La principal herramienta que se ha utilizado para este proyecto viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y estableciendo una clave privada (como decia previamente, a su vez hay que utilizar una clave privada de SERP API) para hacer funcional esta herramienta. 
 
 *Cada persona puede usar una clave de OPEN AI diferente que ha de estar encriptada para que otras personas no hagan un mal uso de esta*
 
