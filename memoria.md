@@ -17,6 +17,10 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 
 *Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Las claves están encriptadas***
 
+  <p align="center">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" height=530 width=470>
+ </p>
+
 ----------
 
 ### 🌶️ Flask 
@@ -81,7 +85,4 @@ Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó se
 Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
  <p align="center">
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5">
- </p>
-  <p align="center">
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" height=550 width=480>
  </p>
