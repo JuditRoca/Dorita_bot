@@ -45,14 +45,7 @@ Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del 
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
 
-<div class="container">
-<div class="center">
-
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a" align="center">
-
-![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
-
-</div>
 ----------
 
 ### 📊 Database
@@ -75,14 +68,7 @@ Tras ello, estamos listos para usar la BBDD.
 
 ### 🤖 OpenAI
 
-La principal herramienta que se ha utilizado viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y obteniendo una clave privada. *Cada persona puede usar una diferente que ha de asegurarse de copiarla en un lugar seguro.* 
-
-.Dicha API tiene sus límites y pueden mejorarse sus respuesta declarando constantes:
-
-ENGINE = Elegimos text-davinci-003 por valor de eficiencia/costo. U otro.
-MAX_TOKENS = 2500, 4000...
-CONTEXT_SIZE = Este parámetro recuerda preguntas y respuestas anteriores.
-PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que nos dé una respuesta más acertada.
+La principal herramienta que se ha utilizado viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y obteniendo una clave privada. *Cada persona puede usar una diferente que ha de asegurarse de copiarla en un lugar seguro.*
 
 ----------
 
@@ -94,4 +80,4 @@ Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya e
 
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
 
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center"">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center">
