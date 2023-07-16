@@ -86,11 +86,9 @@ PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que
 
 ### 🐳 Docker
 
-.Docker resultó ser ... y nos dio (o no) problemas de compatibilidad. Instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine).
+Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó ser sencillo. Judith ya había usado el Dockerfile en un trabajo anterior y sabía usarlo. No nos dio problemas de compatibilidad, instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine) y poco más.
 
-.Hay un Dockerfile para producción.
-
-Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
+Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
 
 <div class="container">
 <div class="center">
