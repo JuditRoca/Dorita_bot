@@ -26,12 +26,11 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna la URL "/" a la función home(). Este punto acepta solicitudes GET y POST, que se pueden usar para recuperar la página de inicio e interactuar con DoritaBot, nuestro Bot personalizado.
 .Tanto si la petición se trata de una pregunta como si no es así, la respuesta se guardará en index.html para tener un historial y mejorar así la experiencia del usuario.
 
-.El segundo endpoint @app.route('/get_history', methods=['GET']) que es la que crea el historial (def get_all()).
+El segundo endpoint es @app.route('/get_history', methods=['GET']), que es la que crea el historial (funcion de def get_all() en el código).
 
-.La función de render_template() se utiliza para renderizar plantillas HTML que se pueden devolver como respuesta a solicitudes HTTP.
+La función de render_template() se utiliza para renderizar plantillas HTML que se pueden devolver como respuesta a solicitudes HTTP.
 
-*Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. 
-Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
+*Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
 
 ![dev no production](https://github.com/JuditRoca/GPT_Googler/assets/130987096/72d1c0f1-be99-47dd-a78f-eb8e7fa81622)
 
@@ -45,62 +44,41 @@ Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del 
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
 
-<div class="container">
-<div class="center">
-  
-![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a" align="center">
 
-</div>
 ----------
 
 ### 📊 Database
 
-Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear una DDBB. Allí, el usuario puede ajustar los parámetros, los cuales son:
+Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear una DDBB. Allí, pueden ajustarse los parámetros, los cuales permiten:
 * Cambiar las opciones del motor a MySQL.
 * Cambiar las Plantillas a "free".
 * Cambiar en el usuario y creación de la contraseña.
 * Opcional: puede cambiarse el nombre en el identificador de instancia de base de datos.
 * Opcional: en la opción "Asignar Almacenamiento", puedes cambiar la capacidad.
 
-Tras esperar a que el servicio cree nuestra BBDD, necesitaremos cambiar una cosa para permitir la conectividad con nuestra máquina. 
+Tras esperar a que el servicio cree nuestra BBDD, se necesita cambiar una cosa para permitir la conectividad con la máquina. 
 Hacemos clic en nuestra BBDD y nos dirigimos a "Seguridad>Reglas de entrada" para crear una nueva línea con IPv4 que permita cualquier tráfico con origen (0.0.0.0/0).
 
 Una vez que lo tengamos en ejecución, debemos crear una tabla para almacenar nuestras indicaciones. 
-Todas las preguntas y respuestas están escritas en archivo .txt. 
-Tras ello, estamos listos para usar la BBDD.
+Todas las preguntas y respuestas están escritas en archivo .txt.
 
 ----------
 
 ### 🤖 OpenAI
 
-La principal herramienta que se ha utilizado viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y obteniendo una clave privada. *Cada persona puede usar una diferente que ha de asegurarse de copiarla en un lugar seguro.* 
+La principal herramienta que se ha utilizado para este proyecto viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y estableciendo una clave privada (como decia previamente, a su vez hay que utilizar una clave privada de SERP API) para hacer funcional esta herramienta. 
 
-.Dicha API tiene sus límites y pueden mejorarse sus respuesta declarando constantes:
-
-ENGINE = Elegimos text-davinci-003 por valor de eficiencia/costo. U otro.
-MAX_TOKENS = 2500, 4000...
-CONTEXT_SIZE = Este parámetro recuerda preguntas y respuestas anteriores.
-PROMPT_ENGINEERING = Esta es información concreta que le damos a la IA para que nos dé una respuesta más acertada.
+*Cada persona puede usar una clave de OPEN AI diferente que ha de estar encriptada para que otras personas no hagan un mal uso de esta*
 
 ----------
 
 ### 🐳 Docker
 
-.Docker resultó ser ... y nos dio (o no) problemas de compatibilidad. Instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine).
+Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó ser sencillo. Judith ya había usado el Dockerfile en un trabajo anterior y sabía usarlo. No nos dio problemas de compatibilidad, instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine) y poco más.
 
-.Hay un Dockerfile para producción.
+Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
 
-Una vez que se han establecido todos los parámetros y comandos de Dockerfile, ya está todo en orden.
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
 
-<div class="container">
-<div class="center">
-
-<img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" style="text-align: center;">
-
-</div>
-
-<div class="container">
-<div class="center">
-
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450" style="text-align: center;"/>
-</div>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center" height=450 width=500>
