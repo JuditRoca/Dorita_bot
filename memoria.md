@@ -51,14 +51,14 @@ Las respuestas que genera no solo están en una letra más legible que en la de 
 
 ### 📊 Database
 
-Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear una DDBB. Allí, el usuario puede ajustar los parámetros, los cuales son:
+Para crear la base de datos en AWS, se ha de ir a la sección de RDS para crear una DDBB. Allí, pueden ajustarse los parámetros, los cuales permiten:
 * Cambiar las opciones del motor a MySQL.
 * Cambiar las Plantillas a "free".
 * Cambiar en el usuario y creación de la contraseña.
 * Opcional: puede cambiarse el nombre en el identificador de instancia de base de datos.
 * Opcional: en la opción "Asignar Almacenamiento", puedes cambiar la capacidad.
 
-Tras esperar a que el servicio cree nuestra BBDD, necesitaremos cambiar una cosa para permitir la conectividad con nuestra máquina. 
+Tras esperar a que el servicio cree nuestra BBDD, se necesita cambiar una cosa para permitir la conectividad con la máquina. 
 Hacemos clic en nuestra BBDD y nos dirigimos a "Seguridad>Reglas de entrada" para crear una nueva línea con IPv4 que permita cualquier tráfico con origen (0.0.0.0/0).
 
 Una vez que lo tengamos en ejecución, debemos crear una tabla para almacenar nuestras indicaciones. 
@@ -69,7 +69,9 @@ Tras ello, estamos listos para usar la BBDD.
 
 ### 🤖 OpenAI
 
-La principal herramienta que se ha utilizado viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y obteniendo una clave privada. *Cada persona puede usar una diferente que ha de asegurarse de copiarla en un lugar seguro.*
+La principal herramienta que se ha utilizado para este proyecto viene de la mano de OpenAI, a la que se puede acceder por su API a ChatGPT iniciando sesión y estableciendo una clave privada (a su vez hay que utilizar una clave de SERP API) para hacer funcional esta herramienta. 
+
+*Cada persona puede usar una clave de OPEN AI diferente que ha de estar encriptada para que otras personas no hagan un mal uso de esta*
 
 ----------
 
