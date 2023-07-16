@@ -90,14 +90,10 @@ Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó se
 
 Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
 
-<div class="container">
-<div class="center">
-
-<center><img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" style="text-align: center;"></center>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" aline="right">
 
 <img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" style="text-align: center;">
 
-</div>
 
 <div class="container">
 <div class="center">
