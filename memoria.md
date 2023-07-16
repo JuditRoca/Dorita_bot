@@ -15,13 +15,13 @@ A su vez, creamos las carpetas de "static", "templates" y "utils" para dejar el 
 
 Este acelerado desarrollo nos permitió poder centrarnos para los siguientes días en Docker, en la base de datos de AWS y en perfeccionar lo que teníamos.
 
-*Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Tranquilos que las claves están encriptadas***
+*Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Las claves están encriptadas***
 
 ----------
 
 ### 🌶️ Flask 
 
-.En esta aplicación, se puede acceder a través de solicitudes HTTP.
+A este proyecto se puede acceder a través de solicitudes HTTP.
 
 Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna la URL "/" a la función home(). Este punto acepta solicitudes GET y POST, que se pueden usar para recuperar la página de inicio e interactuar con DoritaBot, nuestro Bot personalizado.
 .Tanto si la petición se trata de una pregunta como si no es así, la respuesta se guardará en index.html para tener un historial y mejorar así la experiencia del usuario.
@@ -83,5 +83,5 @@ Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya e
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5">
  </p>
   <p align="center">
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" height=450 width=500>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" height=550 width=480>
  </p>
