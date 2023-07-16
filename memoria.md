@@ -44,8 +44,9 @@ Su interfaz muestra una gama de colores cálidos que mejoran la experiencia del 
 
 Las respuestas que genera no solo están en una letra más legible que en la de otros chats, sino que además el historial de respuestas es más claro.
 
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a" align="center">
-
+ <p align="center">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a">
+ </p>
 ----------
 
 ### 📊 Database
@@ -78,7 +79,9 @@ La principal herramienta que se ha utilizado para este proyecto viene de la mano
 Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó ser sencillo. Judith ya había usado el Dockerfile en un trabajo anterior y sabía usarlo. No nos dio problemas de compatibilidad, instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine) y poco más.
 
 Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
-
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
-
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center" height=450 width=500>
+ <p align="center">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5">
+ </p>
+  <p align="center">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" height=450 width=500>
+ </p>
