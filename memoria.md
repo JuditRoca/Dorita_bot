@@ -47,7 +47,9 @@ Las respuestas que genera no solo están en una letra más legible que en la de 
 
 <div class="container">
 <div class="center">
-  
+
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a" align="center">
+
 ![doritabotchat](https://github.com/JuditRoca/GPT_Googler/assets/130987096/7654b50a-dc31-47b7-9b7f-0c2c3fae925a)
 
 </div>
@@ -90,13 +92,6 @@ Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó se
 
 Una vez establecimos todos los parámetros y comandos de nuesto Dockerfile, ya estaba todo en orden.
 
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center" width="650" height="375">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
 
-<img width="650" height="375" src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" align="center">
-
-
-<div class="container">
-<div class="center">
-
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" alt="requirementsdorita" width="350" height="450" style="text-align: center;"/>
-</div>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/4676bed4-a022-4b94-a35e-e8973291d3af" align="center"">
