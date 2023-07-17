@@ -29,11 +29,11 @@ historial = []
 @app.route('/', methods=['GET', 'POST'])
 def home():
     """
-    Basic function where the user asks something and returns the answer from ChatGPT. It will also save it in the Cloud DDBB, in this case, AWS.
+    Función básica del home que sirve para preguntar y solicitar información al chatbot, conectándose a Langchain y OpenAI
+    También almacena un registro de todas las solicitudes y sus respuestas junto a la hora de ejecución en una base de datos externa.
 
-    Parameters 
-    ----------
-    Type in the interface what you want to ask and it will return the answer.
+    Returns: 
+        Respuesta en la misma interfaz de la aplicación.
     """
     try:
         if request.method == 'GET':
@@ -67,6 +67,12 @@ def home():
     
 @app.route('/get_history', methods=['GET'])
 def get_all():
+    """
+    Función para obtener todos los registros de la base de datos externa.
+
+    Returns:
+        Todos los registros existentes en la base de datos, ordenados por orden de consulta.
+    """
     db = pymysql.connect(host = host,
                         user = username,
                         password = password,
