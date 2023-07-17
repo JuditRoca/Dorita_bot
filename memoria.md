@@ -80,7 +80,7 @@ La principal herramienta que se ha utilizado para este proyecto viene de la mano
 Pensábamos que ibamos a tener grandes problemas con el Docker, pero resultó ser sencillo. Judith ya había usado el Dockerfile en un trabajo anterior y sabía usarlo. No nos dio problemas de compatibilidad, instalamos las bibliotecas de claves en un entorno alpine (FROM python:3.8-alpine) y poco más.
 
  <p align="center">
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ab045ba9-d89e-4478-8aa1-4c0d385bfec5" height=600 width=830>
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/21b9693d-7cc3-49b7-83c9-4210459e20f6" height=600 width=830>
  </p>
 
 Una vez establecimos todos los pasos de la imagen de arriba ya está todo en orden y listo para chatbotear.
