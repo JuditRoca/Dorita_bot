@@ -18,7 +18,7 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 *Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Las claves están encriptadas***
 
   <p align="center">
-<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ea122805-d487-43a1-9094-1cd373a8f4c9 width=400 height=400">
+<img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ea122805-d487-43a1-9094-1cd373a8f4c9 width=300 height=300">
  </p>
 
 ----------
@@ -27,12 +27,9 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 
 A este proyecto se puede acceder a través de solicitudes HTTP.
 
-Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna la URL "/" a la función home(). Este punto acepta solicitudes GET y POST, que se pueden usar para recuperar la página de inicio e interactuar con DoritaBot, nuestro Bot personalizado.
-.Tanto si la petición se trata de una pregunta como si no es así, la respuesta se guardará en index.html para tener un historial y mejorar así la experiencia del usuario.
+Nuestro primer endpoint es @app.route('/', methods=['GET', 'POST']), que asigna la URL "/" a la función home(). Este punto acepta solicitudes GET y POST, que se pueden usar para recuperar la página de inicio e interactuar con DoritaBot, nuestro Bot personalizado favorito. Tanto si la petición se trata de una pregunta como si no es así, la respuesta se guardará en index.html para tener un historial y mejorar así la experiencia del usuario.
 
-El segundo endpoint es @app.route('/get_history', methods=['GET']), que es la que crea el historial (funcion de def get_all() en el código).
-
-La función de render_template() se utiliza para renderizar plantillas HTML que se pueden devolver como respuesta a solicitudes HTTP.
+Y es nuestro segundo endpoint es @app.route('/get_history', methods=['GET']), el que crea el historial (funcion de def get_all() en el código) para que se vean todas las preguntas y respuestas del primer endpoint.
 
 *Este chatbot puede utilizarse directamente a través del servidor de desarrollo integrado de Flask. Sin embargo, no se recomienda usarlo puesto que no está optimizado para el rendimiento, la seguridad y la confiabilidad.*
 
