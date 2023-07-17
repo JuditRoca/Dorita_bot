@@ -34,11 +34,11 @@ Para clonar y ejecutar el Docker container, debes seguir los siguientes pasos.
 
   2. Crea un archivo .env en la carpeta raíz del repositorio con las siguientes variables y reemplaza <API_KEY> con tu propia clave de API:
 
-      SERPAPI_API_KEY= tu serpapi api key
-      user_bd= nombre de la base de datos
-      pass_bd= la contraseña de tu base de datos.
-      host= el host
-      OPENAI_API_KEY= tu openai key
+     - SERPAPI_API_KEY= tu serpapi api key
+     - user_bd= nombre de la base de datos
+     - pass_bd= la contraseña de tu base de datos.
+     - host= el host
+     - OPENAI_API_KEY= tu openai key
   
   3. Asegúrate de agregar .env al archivo .gitignore para evitar que se suba al repositorio. Esto mantendrá tus claves de API seguras y privadas.
   
