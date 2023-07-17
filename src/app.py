@@ -72,6 +72,7 @@ def get_all():
 
     Returns:
         Todos los registros existentes en la base de datos, ordenados por orden de consulta.
+        
     """
     db = pymysql.connect(host = host,
                         user = username,
