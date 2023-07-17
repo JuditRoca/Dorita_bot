@@ -17,9 +17,9 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 
 *Se han usado una KEY tanto de Serp Api como de OpenAI para que esto fuera posible. **Las claves están encriptadas***
 
-  <p align="center">
-<img src="(https://github.com/JuditRoca/GPT_Googler/assets/130987096/5d521ab9-ac6b-43d2-9de5-fa9c4f0240aa height=300 width=300">
- </p>
+<p align="center">
+<img src="(https://github.com/JuditRoca/GPT_Googler/assets/130987096/5d521ab9-ac6b-43d2-9de5-fa9c4f0240aa">
+</p>
 
 ----------
 
