@@ -21,6 +21,7 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ea122805-d487-43a1-9094-1cd373a8f4c9 height=300 width=300">
  </p>
 
+
 ----------
 
 ### 🌶️ Flask 
