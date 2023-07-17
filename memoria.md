@@ -1,4 +1,4 @@
-# GPT Googler DoritaBot
+![requirementsdorita](https://github.com/JuditRoca/GPT_Googler/assets/130987096/5d521ab9-ac6b-43d2-9de5-fa9c4f0240aa)# GPT Googler DoritaBot
 
 ¡Bienvenid@!
 Somos Judith, Giacomo y Braulio, y hemos creado para todo aquel que lo necesite un bot que busca solución a todas tus dudas, usando tanto Google como ChatGPT.
@@ -20,7 +20,6 @@ Este acelerado desarrollo nos permitió poder centrarnos para los siguientes dí
   <p align="center">
 <img src="https://github.com/JuditRoca/GPT_Googler/assets/130987096/ea122805-d487-43a1-9094-1cd373a8f4c9 height=300 width=300">
  </p>
-
 
 ----------
 
